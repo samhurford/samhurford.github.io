@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riley's - Coming Soon</title>
+    <style>
+        /* Clean up all margins and optimize layout flow */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body, html {
+            width: 100%;
+            min-height: 100vh;
+            background-color: #26668c; /* Your exact Canva background blue */
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; /* Aligns page content to the top so scrolling works cleanly */
+            overflow-x: hidden; /* Stops horizontal shifting */
+            padding: 20px 10px; /* Gives nice breathing room around the edges */
+        }
+
+        /* Container scales the artwork tightly on all devices */
+        .page-container {
+            position: relative;
+            max-width: 550px; /* Keeps desktop size perfectly crisp */
+            width: 100%;
+            height: auto;
+            display: inline-block;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3); 
+        }
+
+        /* The full-length Canva artwork graphic element */
+        .main-artwork {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Clickable interactive link button layout layers */
+        .link-overlay {
+            position: absolute;
+            background: rgba(255, 255, 255, 0); 
+            cursor: pointer;
+            border-radius: 6px;
+            transition: background 0.2s ease-in-out;
+        }
+        
+        .link-overlay:hover {
+            background: rgba(255, 255, 255, 0.1); 
+        }
+
+        /* Mapping interactive touch boxes right over your handles grid */
+        .insta-button {
+            top: 40.5%;
+            left: 9%;
+            width: 20%;
+            height: 4.5%;
+        }
+
+        .fb-button {
+            top: 40.5%;
+            left: 31%;
+            width: 21%;
+            height: 4.5%;
+        }
+
+        .tiktok-button {
+            top: 40.5%;
+            left: 54%;
+            width: 37%;
+            height: 4.5%;
+        }
+
+        .email-button {
+            top: 47%;
+            left: 28%;
+            width: 44%;
+            height: 4.5%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="page-container">
+        <!-- CANVAS MAIN COMPOSITION FILE -->
+        <img src="coming-soon-design.png" alt="Riley's Pub - Coming Soon" class="main-artwork">
+
+        <!-- INTERACTIVE INVISIBLE LINK BUTTONS -->
+        <a href="https://instagram.com/rileys.tz/" target="_blank" class="link-overlay insta-button" title="Follow Riley's on Instagram"></a>
+        <a href="https://facebook.com/Rileystz/" target="_blank" class="link-overlay fb-button" title="Follow Riley's on Facebook"></a>
+        <a href="https://tiktok.com/@rileys.tanzania" target="_blank" class="link-overlay tiktok-button" title="Follow Riley's on TikTok"></a>
+        <a href="mailto:info@rileystz.com" class="link-overlay email-button" title="Email Riley's Pub"></a>
+    </div>
+
+</body>
+</html>
